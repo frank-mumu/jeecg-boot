@@ -4,7 +4,7 @@
   <artifactId>jeecg-boot-parent</artifactId>
   <version>2.4.5</version>
   <packaging>pom</packaging>
-  
+
   	<parent>
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-parent</artifactId>
@@ -52,9 +52,9 @@
         <module>jeecg-boot-module-demo</module>
         <module>jeecg-boot-module-system</module>
 
-       <!-- 需要微服务，请打开注释
-       <module>jeecg-boot-starter</module>
-        <module>jeecg-cloud-module</module>-->
+       <!-- 需要微服务，请打开注释-->
+       	<module>jeecg-boot-starter</module>
+		<module>jeecg-cloud-module</module>
 	</modules>
 
 	<distributionManagement>
@@ -354,13 +354,13 @@
                 <!--配置文件前缀-->
                 <prefix.name>jeecg</prefix.name>
                 <!--Nacos配置中心地址-->
-                <config.server-addr>127.0.0.1:8848</config.server-addr>
+                <config.server-addr>www.007nas.top:18848</config.server-addr>
                 <!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
-                <config.namespace></config.namespace>
+                <config.namespace>e893138a-a939-4605-8826-b4d6cf150e70</config.namespace>
                 <!--Nacos配置分组名称-->
                 <config.group>DEFAULT_GROUP</config.group>
                 <!--Nacos服务发现地址-->
-                <discovery.server-addr>127.0.0.1:8848</discovery.server-addr>
+                <discovery.server-addr>www.007nas.top:18848</discovery.server-addr>
             </properties>
         </profile>
         <!-- 测试 -->
@@ -372,13 +372,13 @@
                 <!--配置文件前缀-->
                 <prefix.name>jeecg</prefix.name>
                 <!--Nacos配置中心地址-->
-                <config.server-addr>127.0.0.1:8848</config.server-addr>
+                <config.server-addr>www.007nas.top:18848</config.server-addr>
                 <!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
-                <config.namespace></config.namespace>
+                <config.namespace>83ff030c-057f-4276-be06-df814f22557b</config.namespace>
                 <!--Nacos配置分组名称-->
                 <config.group>DEFAULT_GROUP</config.group>
                 <!--Nacos服务发现地址-->
-                <discovery.server-addr>127.0.0.1:8848</discovery.server-addr>
+                <discovery.server-addr>www.007nas.top:18848</discovery.server-addr>
             </properties>
         </profile>
         <!-- 生产 -->
@@ -390,13 +390,13 @@
                 <!--配置文件前缀-->
                 <prefix.name>jeecg</prefix.name>
                 <!--Nacos配置中心地址-->
-                <config.server-addr>127.0.0.1:8848</config.server-addr>
+                <config.server-addr>www.007nas.top:18848</config.server-addr>
                 <!--Nacos配置中心命名空间,用于支持多环境.这里必须使用ID，不能使用名称,默认为空-->
-                <config.namespace></config.namespace>
+                <config.namespace>177d0f8a-efe3-4e35-9c1d-dc3e650170ab</config.namespace>
                 <!--Nacos配置分组名称-->
                 <config.group>DEFAULT_GROUP</config.group>
                 <!--Nacos服务发现地址-->
-                <discovery.server-addr>127.0.0.1:8848</discovery.server-addr>
+                <discovery.server-addr>www.007nas.top:18848</discovery.server-addr>
             </properties>
         </profile>
     </profiles>
