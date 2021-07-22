@@ -154,6 +154,25 @@ spring:
       shutdown-timeout: 100ms
     password: ''
     port: 16379
+  #rabbitmq配置
+  rabbitmq:
+    host: www.007nas.top
+    username: guest
+    password: guest
+    port: 15672
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+        #消费者的最小数量
+        concurrency: 1
+        #消费者的最大数量
+        max-concurrency: 1
+        #是否支持重试
+        retry:
+          enabled: true
 #mybatis plus 设置
 mybatis-plus:
   mapper-locations: classpath*:org/jeecg/modules/**/xml/*Mapper.xml
@@ -243,7 +262,7 @@ jeecg :
     config:
       data-id: jeecg-gateway-router
       group: DEFAULT_GROUP
-      data-type: yml
+      data-type: database
   #分布式锁配置
   redisson:
     address: www.007nas.top:16379
