@@ -246,7 +246,7 @@ jeecg :
       data-type: yml
   #分布式锁配置
   redisson:
-    address: 127.0.0.1:6379
+    address: www.007nas.top:16379
     password:
     type: STANDALONE
     enabled: true
