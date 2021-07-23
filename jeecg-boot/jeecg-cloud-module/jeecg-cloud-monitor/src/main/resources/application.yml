@@ -23,6 +23,7 @@ spring:
         metadata:
           user.name: ${spring.security.user.name}
           user.password: ${spring.security.user.password}
+        namespace: e893138a-a939-4605-8826-b4d6cf150e70 #dev的namesapce
 # 服务端点检查
 management:
   trace:
